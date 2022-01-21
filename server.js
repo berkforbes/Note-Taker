@@ -1,15 +1,15 @@
-var express = require('express')
-var app = express()
-const { notes } = require('./db/db.json');
+var express = require('express');
+var app = express();
+const notes  = require('./db/db.json');
 
-app.get('/', function (req, res) {
-    res.send('hello world')
-  })
+app.get('/api/notes', (req, res) => {
+  res.json(notes);
+});
 
-app.post('/', function (req, res) {
-    res.send('hello world')
-  })
+app.post('/api/notes', (req, res) => {
+  res.json(notes);
+});
 
-  app.listen(3002, () => {
-    console.log(`API server now on port 3002!`);
-  });
+app.listen(3002, () => {
+  console.log(`API server now on port 3002!`);
+});
