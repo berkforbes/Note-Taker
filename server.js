@@ -25,25 +25,23 @@ app.get('/api/notes/:id', (req, res) => {
 
   app.post('/api/notes', (req, res) => {
     console.log(req.body);
-    const note = createNewnote(req.body, notes)
+    const note = createNewNote(req.body, notes)
     res.json(note);
   });
 
   // Function to create a new note
-  function createNewnote(body, notesArray) {
-    const note = body;
-    notesArray.push(note);
+  function createNewNote(note) {
+    note = JSON.stringify(note)
+    console.log(note);
+    return(note)
 
     // take new array with new note added and write it to db.json file
-    fs.writeFileSync(
-        path.join(__dirname, './db/db.json'),
-        JSON.stringify({ notes: notesArray }, null, 2)
-    );
-
-    //return finished code to POST route for response
-    return note;
-    console.log(note)
-} 
+    fs.writeFileSync('./db/db.json', note, function(err) {
+        if (err) {
+            return console.log(err)
+        }
+    });
+  } 
 
 
 
