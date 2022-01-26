@@ -5,14 +5,17 @@
   This note taking application allows users to create notes. 
 
   ## Table of Contents
+  - [Installation] (#installation)
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributions)
   - [Tests](#tests)
   - [Questions](#questions)
+  
 
   ## Usage
- 
+  The Note Taking app uses CLI and a local host to run, it is also deployed through Heroku to a live site. Follow the link below to access it.
+  https://dashboard.heroku.com/apps/berkforbes-notetaker/deploy/github
 
   ## License
   This project is licensed under MIT
