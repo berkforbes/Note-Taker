@@ -21,6 +21,9 @@
   ## Usage
   The Note Taking app uses CLI and a local host to run, it is also deployed through Heroku to a live site. Follow the link below to access it.
   https://dashboard.heroku.com/apps/berkforbes-notetaker/deploy/github
+  
+  <img width="1426" alt="Screen Shot 2022-01-26 at 12 12 57 AM" src="https://user-images.githubusercontent.com/91864476/151119151-194c0f4f-4b08-4603-92da-54b0491236ba.png">
+
 
   ## License
   This project is licensed under MIT
