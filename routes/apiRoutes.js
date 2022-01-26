@@ -16,7 +16,9 @@ module.exports = function (app) {
   }
 
   app.get("/api/notes", (req, res) => {
+    console.log(notes)
     res.json(notes);
+    
   });
 
   // Post method will add new note
