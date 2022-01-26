@@ -5,7 +5,6 @@
   This note taking application allows users to create notes. 
 
   ## Table of Contents
-  - [Installation] (#installation)
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributions)
